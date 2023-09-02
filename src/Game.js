@@ -1,6 +1,12 @@
 import {
     Chess
-} from 'chess.js'
+} from 'chess.js';
+import {
+    BehaviorSubject
+} from 'rxjs';
 
 const chess = new Chess();
-export default console.log(chess.board);
+const subjectGame = new BehaviorSubject({
+    chess: chess.board()
+})
+export default subjectGame;
