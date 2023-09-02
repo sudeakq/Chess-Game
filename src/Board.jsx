@@ -14,7 +14,7 @@ const Board = ({ board }) => {
         <div className='w-[640px] h-[640px] bg-green-700 flex flex-wrap' >
             {
                 board.flat().map((brd, i) => (
-                    <Square colorValue={colorCntrl(i)}>
+                    <Square colorValue={colorControl(i)}>
                         {brd && <SquareBoard brd={brd} />}
                     </Square>
                 ))
