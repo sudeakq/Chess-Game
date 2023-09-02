@@ -16,9 +16,9 @@ function App() {
   )
   return (
     <DndProvider backend={HTML5Backend}>
-      <>
+      <div className='bg-black h-screen flex items-center justify-center'>
         <Board board={board} />
-      </>
+      </div>
     </DndProvider>
   );
 }

@@ -1,9 +1,25 @@
 import React from 'react'
+import { SquareBoard } from './SquareBoard';
+import { Square } from './Square';
 
 const Board = ({ board }) => {
-    console.log("board", board)
+
+    const colorControl = (i) => {
+        const x = i % 8;
+        const y = Math.abs(Math.floor(i / 8) - 7)
+        return (x + y) % 2 === 0
+    }
+
     return (
-        <div>Board</div>
+        <div className='w-[640px] h-[640px] bg-green-700 flex flex-wrap' >
+            {
+                board.flat().map((brd, i) => (
+                    <Square colorValue={colorCntrl(i)}>
+                        {brd && <SquareBoard brd={brd} />}
+                    </Square>
+                ))
+            }
+        </div >
     )
 }
 export default Board;
