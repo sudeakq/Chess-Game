@@ -10,3 +10,8 @@ const subjectGame = new BehaviorSubject({
     chess: chess.board()
 })
 export default subjectGame;
+
+
+export const move = (from, to) => {
+    console.log(from, to)
+}
