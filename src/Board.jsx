@@ -14,7 +14,7 @@ const Board = ({ board }) => {
         const x = i % 8;
         const letters = ["a", "b", "c", "d", "e", "f", "g", "h"][x]
         const y = Math.abs(Math.floor(i / 8) - 7)
-        return `${letters}${y + 1}` //a8 gibi değerler gelir
+        return `${letters}${y + 1}`
     }
 
     return (
