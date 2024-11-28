@@ -1,3 +1,6 @@
+# Chess Game With React(still developing)
+Im trying to do a chess game with react.js. Still in progress....
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
